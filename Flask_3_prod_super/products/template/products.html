@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row" >
+        {% for products in data %}
+        <div class="col-md-4 text-center">
+            <div><img src="{{url_for('products.static', filename=products.img_name)}}" width="300" height="300"></div>
+            <h3><a class="text-success" href="{{url_for('products.get_item_page', product_id=products.id)}}">{{products.name}}</a></h3>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+</div>
+{% endblock %}

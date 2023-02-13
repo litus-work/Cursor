@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="text-center"><h1 style="color:red">This is a {{name}}</h1></div>
+    <br>
+    <div class="row">
+        <div class="col-md-4 text-center"><img src="{{ url_for('products.static', filename=image) }}"></div>
+        <div class="col-md-7 text-left">{{desc}}</div>
+    </div>
+        <div class="col-md-4 text-center"><h2 style="color:blue">Price: {{price}} Euro</h2></div>
+
+</div>
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="text"><h1 style="color:red">This is a supermarket {{name}}</h1></div>
+<br>
+<div class="prod">
+    <div class="img"><img src="{{ url_for('supermarkets.static', filename=image) }}"></div>
+    </div>
+<div class="location">{{location}}</div>
+{% endblock %}

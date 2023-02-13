@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Base</title>
+    <style>
+    #images {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    }
+    #text {text-align: center;
+    color: red;
+    margin-top: 30px;}
+    </style>
+</head>
+<body>
+<div id="text"><h1>Make your choiсe!</h1></div>
+<div id="images">
+<img src="../static/flask-homework.png" alt="Workplace" usemap="#workmap">
+<map name="workmap">
+    <area shape="rect" coords="48,57,235,160" alt="Alarm clock" href="{{url_for('get_item_page', item='Alarm clock')}}">
+    <area shape="poly" coords="400,204,384,195,372,187,372,145,384,134,387,100,421,55,467,39,511,51,539,79,550,108,552,134,563,143,563,186,553,195,536,204" alt="Headphones" href="{{url_for('get_item_page', item='Headphones')}}" >
+    <area shape="poly" coords="734,30 ,886,32,917,60,910,134,880,186,846,213,735,213" alt="iPod" href="{{url_for('get_item_page', item='iPod')}}">
+    <area shape="rect" coords="49,310,182,495" alt="Calculator" href="{{url_for('get_item_page', item='Calculator')}}">
+    <area shape="rect" coords="400,322,541,472" alt="Coffeemaker" href="{{url_for('get_item_page', item='Coffeemaker')}}">
+    <area shape="rect" coords="717,356,895,450" alt="Battery charger" href="{{url_for('get_item_page', item='Battery charger')}}">
+</map>
+</div>
+</body>
+</html>

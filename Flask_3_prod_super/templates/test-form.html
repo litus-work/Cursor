@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+
+<br>
+<div class="container">
+    <p class="text-center text-success h1">Для добавления нового товара, заполните форму ниже:</p>
+    <br><br><br>
+    <form action="" method="post" name="login">
+        <div class="mb-3">
+            <label for="form_product_id" class="form-label">Название продукта</label>
+            <input class="form-control" id="form_product_id">
+        </div>
+        <label for="form_product_price" class="form-label">Назначить цену</label>
+        <div class="input-group mb-3">
+            <span class="input-group-text">UAH</span>
+            <input type="text" class="form-control" aria-label="Цена (в гривнах)" id="form_product_price">
+            <span class="input-group-text">.00</span>
+        </div>
+
+        <div class="mb-3">
+            <label for="form_product_desc" class="form-label">Описание для продукта</label>
+            <textarea class="form-control" id="form_product_desc" rows="5"></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="form_product_image" class="form-label">Добавить изображение продукта</label>
+            <input class="form-control" type="file" id="form_product_image">
+        </div>
+        <div align="center">
+            <button type="button" class="btn btn-success btn-lg">Добавить продукт</button>
+        </div>
+    </form>
+</div>
+
+
+{% endblock %}
